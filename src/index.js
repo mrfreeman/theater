@@ -1,12 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import TicketBox from './TicketBox';
+import React, { Component } from 'react'
+import { render } from 'react-dom'
 import style from './style';
-//import './index.css';
+import App from './containers/App'
 
-ReactDOM.render(
- <TicketBox
- url='http://localhost:3001/api/tickets'
- pollInterval={2000} />,
- document.getElementById('root')
-);
+
+render(
+  <App />,
+  document.getElementById('root')
+)

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import TicketsShow from './TicketsShow'
 import style from './style'
-import Radium from 'radium'
 import './index.css'
 
 export default class Home extends Component {
@@ -24,4 +23,3 @@ export default class Home extends Component {
     )
   }
 }
-Home = Radium(Home);

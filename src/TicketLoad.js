@@ -57,28 +57,8 @@ class TicketLoad extends Component {
  render() {
  return (
  <div style={ style.ticket }>
- <h3>{this.props.name}</h3>
- <span dangerouslySetInnerHTML={ this.rawMarkup() } />
- { (this.state.toBeUpdated)
- ? (<form onSubmit={ this.handleTicketUpdate }>
- <input
- type='text'
- placeholder='Update name…'
- style={ style.ticketFormName }
- value={ this.state.name }
- onChange={ this.handleNameChange } />
- <input
- type='text'
- placeholder='Update your comment…'
- style={ style.ticketFormText }
- value={ this.state.text }
- onChange={ this.handleTextChange } />
- <input
- type='submit'
- style={ style.ticketFormPost }
- value='Update' />
- </form>)
- : null}
+ <img src={this.props.name} style={ style.img }  />
+  <span dangerouslySetInnerHTML={ this.rawMarkup() } />
  </div>
  )
  }

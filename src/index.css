@@ -9,6 +9,9 @@ body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5em;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 header, section {
@@ -41,7 +44,8 @@ a {
 }
 
 p {
-  margin-bottom: 1.5rem;
+  margin-top: 0;
+  margin-bottom: -1rem;
 }
 h2 + p {
   color: #757575;
@@ -62,7 +66,7 @@ pre {
 ul {
   border-bottom:1px solid #c67777;
   list-style: none;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 0 0;
   padding: 0;
 }
 
@@ -115,4 +119,5 @@ flex-direction: column;
  * in the center of their container.
  */
 justify-content: center;
+flex: 1;
 }

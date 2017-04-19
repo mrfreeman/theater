@@ -1,25 +1,51 @@
 //style.js
 const style = {
  ticketBox: {
- width:'80vw',
+ width:'60vw',
  margin:'0 auto',
- fontFamily:'Helvetica, sans-serif'
+ fontFamily:'Helvetica, sans-serif',
+ "textAlign": "center"
+ },
+ ticketBoxEdit: {
+ width:'90vw',
+ height: '10vw',
+ margin:'0 auto',
+ fontFamily:'Helvetica, sans-serif',
+ "textAlign": "center"
  },
  title: {
  textAlign:'center',
  textTransform:'uppercase'
  },
  ticketList: {
- border:'1px solid #f1f1f1',
- padding:'0 12px',
- maxHeight:'70vh',
- overflow:'scroll'
+   "display": "flex",
+   "border": "0px solid #CAD0D2",
+   "borderRadius": "1px",
+   "overflow": "hidden",
+   "flexFlow": "row wrap"
  },
  ticket: {
- backgroundColor:'#fafafa',
- margin:'10px',
- padding:'3px 10px',
- fontSize:'.85rem'
+   //"flex": "1 1 0%",
+   "flex": "0 1 calc(25% - 8px)",
+   "flexGrow": "1",
+   "display": "inline-block",
+   "border": "none",
+   "borderRadius": "0",
+   "justifyContent": "center",
+   "alignItems": "center",
+   "padding": "15px 0",
+   "textAlign": "center",
+   "color": "grey",
+   "backgroundSize": "cover",
+   "backgroundPosition": "center",
+   //"width": "calc(100% * (1/4) - 10px - 1px)"
+
+ },
+ ticketListEdit: {
+   "display": "flex",
+   "border": "1px solid #CAD0D2",
+   "borderRadius": "1px",
+   "overflow": "scroll"
  },
  ticketForm: {
  margin:'10px',

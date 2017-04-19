@@ -56,7 +56,7 @@ setInterval(this.loadTicketsFromServer, this.props.pollInterval);
 }
  render() {
  return (
- <div style={ style.ticketBox }>
+ <div style={ style.ticketBoxEdit }>
  <h2>Tickets:</h2>
  <TicketList  onTicketDelete={ this.handleTicketDelete }
  onTicketUpdate={ this.handleTicketUpdate } data={ this.state.data } />

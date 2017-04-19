@@ -4,6 +4,7 @@ import axios from 'axios';
 import TicketListRO from './TicketListRO';
 import TicketForm from './TicketForm';
 import style from './style';
+import './index.css'
 
 class TicketBox extends Component {
  constructor(props) {
@@ -24,7 +25,7 @@ setInterval(this.loadTicketsFromServer, this.props.pollInterval);
  render() {
  return (
  <div style={ style.ticketBox }>
- <h2>Tickets:</h2>
+ <h2>Билеты на лучшие спектакли и мероприятия Москвы</h2>
  <TicketListRO  data={ this.state.data } />
  </div>
  )

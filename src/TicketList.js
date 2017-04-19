@@ -15,7 +15,7 @@ class TicketList extends Component {
  )
  })
  return (
- <div style={ style.ticketList }>
+ <div style={ style.ticketListEdit }>
  { ticketNodes }
  </div>
  )

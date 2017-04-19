@@ -11,11 +11,10 @@ export default class Home extends Component {
   <div>
     <nav id="sc3">
       <ul>
-        <li><a href="#" title="Home">Home</a></li>
-        <li><a href="#" title="Blog">Blog</a></li>
-        <li><a href="#/admin" title="Work">Work</a></li>
-        <li><a href="#" title="Resources">Resources</a></li>
-        <li><a href="#" title="Meta">Meta</a></li>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Условия доставки</a></li>
+        <li><a href="#/admin">Контакты</a></li>
+        <li><a href="#">О Нас</a></li>
       </ul>
   </nav>
   <div class="content">

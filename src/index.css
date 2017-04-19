@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #eee;
+  background-color: #ffffff;
   color: #333;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem;
@@ -50,19 +50,6 @@ h2 + p {
   margin-top: -.5rem;
   text-transform: uppercase;
 }
-p code {
-  background-color: rgba(251, 175, 93, 0.25);
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
-  display: inline-block;
-  margin: 0 .25rem;
-  padding: 0 .25rem;
-}
-p.note {
-  background-color: #C4DF9B;
-  border-left: 0.5rem solid rgba(0, 0, 0, 0.25);
-  padding: 1rem;
-}
 
 pre {
   background-color: rgba(0, 0, 0, 0.75);
@@ -73,7 +60,7 @@ pre {
 }
 
 ul {
-  border-bottom: 1px solid #ccc;
+  border-bottom:1px solid #c67777;
   list-style: none;
   margin: 0 0 1.5rem 0;
   padding: 0;

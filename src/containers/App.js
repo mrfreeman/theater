@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Home from '../Home'
 import TicketBox from '../TicketBox';
+import '../index.css'
 
 
 export default class App extends Component {

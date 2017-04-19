@@ -12,6 +12,7 @@
     "mongoose": "^4.9.4",
     "muicss": "^0.9.15",
     "nodemon": "^1.11.0",
+    "radium": "^0.18.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-foundation": "^0.7.0"

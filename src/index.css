@@ -92,7 +92,10 @@ li a {
 li:hover a {
   color: #ffffff;
 }
-
+footer {
+  margin-top: 100px;
+  text-align: center;
+}
 #sc3 {
   display: flex;
   justify-content: center;

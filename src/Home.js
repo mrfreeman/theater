@@ -19,6 +19,9 @@ export default class Home extends Component {
   <div class="content">
       <TicketsShow url='http://localhost:3001/api/tickets' pollInterval={2000} />
   </div>
+  <footer>
+    <a href="#home">msk-bilet.com</a> | 2017
+  </footer>
 </div>
     )
   }

@@ -26,7 +26,7 @@ const style = {
  },
  ticket: {
    //"flex": "1 1 0%",
-   "flex": "0 1 calc(25% - 8px)",
+   "flex": "0 1 calc(25% - 10px)",
    "flexGrow": "1",
    "display": "inline-block",
    "border": "none",
@@ -35,9 +35,8 @@ const style = {
    "alignItems": "center",
    "padding": "15px 0",
    "textAlign": "center",
-   "color": "grey",
-   "backgroundSize": "cover",
-   "backgroundPosition": "center",
+   "color": "#606060",
+   //"backgroundColor": "#f5f5f5"
    //"width": "calc(100% * (1/4) - 10px - 1px)"
 
  },

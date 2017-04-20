@@ -55,9 +55,13 @@ class TicketLoad extends Component {
  return { __html: rawMarkup };
  }
  render() {
+   var imgUrl = this.props.name;
+   var divStyle = {
+    backgroundImage: "url(" + imgUrl + ")"
+}
  return (
  <div style={ style.ticket }>
- <img src={this.props.name} style={ style.img }  />
+ <img src={ this.props.name }  />
   <span dangerouslySetInnerHTML={ this.rawMarkup() } />
  </div>
  )

@@ -7,7 +7,8 @@ var Schema = mongoose.Schema;
 //object that shows the shape of your database entries.
 var TicketsSchema = new Schema({
  name: String,
- text: String
+ text: String,
+ img: String
 });
 //export our module to use in server.js
 module.exports = mongoose.model('Ticket', TicketsSchema);

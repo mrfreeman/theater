@@ -24,8 +24,8 @@ setInterval(this.loadTicketsFromServer, this.props.pollInterval);
 }
  render() {
  return (
- <div style={ style.ticketBox }>
- <h2>Билеты на лучшие спектакли и мероприятия Москвы</h2>
+ <div style={ style.contentBox }>
+ <h2 style={ style.textCenter }>Билеты на лучшие спектакли и мероприятия Москвы</h2>
  <TicketListRO  data={ this.state.data } />
  </div>
  )

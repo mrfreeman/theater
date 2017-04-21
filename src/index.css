@@ -93,8 +93,18 @@ li:hover a {
   color: #ffffff;
 }
 footer {
+  height: 75px;
+  width: 98vw;
   margin-top: 100px;
   text-align: center;
+  background-color: #b85c5c;
+  color: white;
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+footer a {
+  color: white;
 }
 #sc3 {
   display: flex;

@@ -7,7 +7,7 @@ class Navbar extends Component {
         <ul>
           <li><a href="#">Главная</a></li>
           <li><a href="#/admin">Условия доставки</a></li>
-          <li><a href="#">О Нас</a></li>
+          <li><a href="#about">О Нас</a></li>
         </ul>
       </nav>
     )

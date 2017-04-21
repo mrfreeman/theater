@@ -1,10 +1,9 @@
 //style.js
 const style = {
- ticketBox: {
+ contentBox: {
  width:'60vw',
  margin:'0 auto',
  fontFamily:'Helvetica, sans-serif',
- "textAlign": "center"
  },
  ticketBoxEdit: {
  width:'90vw',
@@ -91,6 +90,9 @@ const style = {
  paddingRight:'15px',
  fontSize:'.7rem',
  color:'red'
+ },
+ textCenter: {
+ "textAlign": "center"
  }
 }
 module.exports = style;

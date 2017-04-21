@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './index.css'
 import style from './style';
 
-class Delivery extends Component {
+class About extends Component {
   render() {
     return (
       <div style={ style.contentBox } id="about">
@@ -18,4 +18,4 @@ class Delivery extends Component {
   }
 }
 
-export default Delivery;
+export default About;

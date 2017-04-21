@@ -43,7 +43,8 @@ const style = {
    "display": "flex",
    "border": "1px solid #CAD0D2",
    "borderRadius": "1px",
-   "overflow": "scroll"
+   "overflow": "scroll",
+   "flexWrap": "wrap"
  },
  ticketForm: {
  margin:'10px',

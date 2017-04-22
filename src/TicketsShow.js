@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import TicketListRO from './TicketListRO';
-import TicketForm from './TicketForm';
 import style from './style';
 import './index.css'
 

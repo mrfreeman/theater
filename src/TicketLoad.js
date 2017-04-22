@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import style from './style';
 import marked from 'marked';
+import './index.css'
+
 
 class TicketLoad extends Component {
   constructor(props) {
@@ -60,10 +62,10 @@ class TicketLoad extends Component {
  render() {
 
  return (
- <div style={ style.ticket }>
- <img src={ this.props.img } />
- <h3> { this.props.name } </h3>
-  <span dangerouslySetInnerHTML={ this.rawMarkup() } />
+ <div style={ style.ticket } className="ticket">
+   <img src={ this.props.img } alt={ this.props.name }/>
+   <h3 className="ticketname"> { this.props.name } </h3>
+   <span dangerouslySetInnerHTML={ this.rawMarkup() } />
  </div>
  )
  }

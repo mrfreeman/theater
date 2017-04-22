@@ -8,14 +8,14 @@ class TicketListRO extends Component {
  let ticketNodes = this.props.data.map(ticket => {
  return (
  <TicketLoad img={ ticket.img } uniqueID={ ticket['_id'] }
-  key={ ticket['_id'] } name={ ticket.name }>
+  key={ ticket['_id'] } name={ ticket.name } >
  { ticket.text }
  </TicketLoad>
  )
  })
  return (
  <div style={ style.ticketList }>
- { ticketNodes }
+  { ticketNodes }
  </div>
  )
  }

@@ -9,7 +9,8 @@ class TicketLoad extends Component {
  this.state= {
  toBeUpdated: false,
  name: '',
- text: ''
+ text: '',
+ img: ''
  };
  //binding all our functions to this class
  this.deleteTicket = this.deleteTicket.bind(this);
@@ -30,12 +31,14 @@ class TicketLoad extends Component {
  //request will ignore it.
  let name = (this.state.name) ? this.state.name : null;
  let text = (this.state.text) ? this.state.text : null;
- let ticket = { name: name, text: text};
+ let img = (this.state.img) ? this.state.img : null;
+ let ticket = { name: name, text: text, img: img};
  this.props.onTicketUpdate(id, ticket);
  this.setState({
  toBeUpdated: !this.state.toBeUpdated,
  name: '',
- text: ''
+ text: '',
+ img: ''
  })
  }
  deleteTicket(e) {
@@ -55,13 +58,11 @@ class TicketLoad extends Component {
  return { __html: rawMarkup };
  }
  render() {
-   var imgUrl = this.props.name;
-   var divStyle = {
-    backgroundImage: "url(" + imgUrl + ")"
-}
+
  return (
  <div style={ style.ticket }>
- <img src={ this.props.name }  />
+ <img src={ this.props.img } />
+ <h3> { this.props.name } </h3>
   <span dangerouslySetInnerHTML={ this.rawMarkup() } />
  </div>
  )

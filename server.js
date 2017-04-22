@@ -58,6 +58,7 @@ router.route('/tickets')
  //body parser lets us use the req.body
  ticket.name = req.body.name;
  ticket.text = req.body.text;
+ ticket.img = req.body.img;
 ticket.save(function(err) {
  if (err)
  res.send(err);
@@ -77,6 +78,7 @@ res.send(err);
 //nothing was changed we will not alter the field.
 (req.body.name) ? ticket.name = req.body.name : null;
 (req.body.text) ? ticket.text = req.body.text : null;
+(req.body.img) ? ticket.img = req.body.img : null;
 //save comment
 ticket.save(function(err) {
 if (err)

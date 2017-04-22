@@ -55,6 +55,11 @@ h2 + p {
   text-transform: uppercase;
 }
 
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 pre {
   background-color: rgba(0, 0, 0, 0.75);
   border-left: 0.5rem solid rgba(0, 0, 0, 0.5);
@@ -91,6 +96,9 @@ li a {
 }
 li:hover a {
   color: #ffffff;
+}
+span {
+  font-size: 14px;
 }
 footer {
   height: 75px;

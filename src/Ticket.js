@@ -9,13 +9,15 @@ class Ticket extends Component {
  this.state= {
  toBeUpdated: false,
  name: '',
- text: ''
+ text: '',
+ img: ''
  };
  //binding all our functions to this class
  this.deleteTicket = this.deleteTicket.bind(this);
  this.updateTicket = this.updateTicket.bind(this);
  this.handleNameChange = this.handleNameChange.bind(this);
  this.handleTextChange = this.handleTextChange.bind(this);
+ this.handleImgChange = this.handleImgChange.bind(this);
  this.handleTicketUpdate = this.handleTicketUpdate.bind(this);
  }
  updateTicket(e) {
@@ -30,12 +32,14 @@ class Ticket extends Component {
  //request will ignore it.
  let name = (this.state.name) ? this.state.name : null;
  let text = (this.state.text) ? this.state.text : null;
- let ticket = { name: name, text: text};
+ let img = (this.state.img) ? this.state.img : null;
+ let ticket = { name: name, text: text, img: img};
  this.props.onTicketUpdate(id, ticket);
  this.setState({
  toBeUpdated: !this.state.toBeUpdated,
  name: '',
- text: ''
+ text: '',
+ img: ''
  })
  }
  deleteTicket(e) {
@@ -50,6 +54,9 @@ class Ticket extends Component {
  handleNameChange(e) {
  this.setState({ name: e.target.value });
  }
+ handleImgChange(e) {
+ this.setState({ img: e.target.value });
+ }
  rawMarkup() {
  let rawMarkup = marked(this.props.children.toString());
  return { __html: rawMarkup };
@@ -58,6 +65,7 @@ class Ticket extends Component {
  return (
  <div style={ style.ticket }>
  <h3>{this.props.name}</h3>
+ <h4>{this.props.img}</h4>
  <span dangerouslySetInnerHTML={ this.rawMarkup() } />
  <a style={ style.updateLink } href='#' onClick={ this.updateTicket }>update</a>
  <a style={ style.deleteLink } href='#' onClick={ this.deleteTicket }>delete</a>
@@ -69,6 +77,12 @@ class Ticket extends Component {
  style={ style.ticketFormName }
  value={ this.state.name }
  onChange={ this.handleNameChange } />
+ <input
+ type='text'
+ placeholder='Update image…'
+ style={ style.ticketFormName }
+ value={ this.state.img }
+ onChange={ this.handleImgChange } />
  <input
  type='text'
  placeholder='Update your comment…'

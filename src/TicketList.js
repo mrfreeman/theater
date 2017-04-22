@@ -7,10 +7,11 @@ class TicketList extends Component {
  render() {
  let ticketNodes = this.props.data.map(ticket => {
  return (
- <Ticket name={ ticket.name } uniqueID={ ticket['_id'] }
+ <Ticket img={ ticket.img } uniqueID={ ticket['_id'] }
  onTicketDelete={ this.props.onTicketDelete }
  onTicketUpdate={ this.props.onTicketUpdate } key={ ticket['_id'] }>
- { ticket.text}
+ { ticket.name }<br/>
+ { ticket.text }
  </Ticket>
  )
  })

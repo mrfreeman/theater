@@ -5,7 +5,7 @@ class Footer extends Component {
     return (
       <div>
         <footer>
-          <a href="#home">msk-bilet.com </a>| 2017
+          <a href="#sc3">msk-bilet.com </a>| 2017
         </footer>
       </div>
     )

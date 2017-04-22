@@ -7,9 +7,9 @@ class TicketListRO extends Component {
  render() {
  let ticketNodes = this.props.data.map(ticket => {
  return (
- <TicketLoad name={ ticket.name } uniqueID={ ticket['_id'] }
-  key={ ticket['_id'] }>
- { ticket.text}
+ <TicketLoad img={ ticket.img } uniqueID={ ticket['_id'] }
+  key={ ticket['_id'] } name={ ticket.name }>
+ { ticket.text }
  </TicketLoad>
  )
  })

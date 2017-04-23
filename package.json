@@ -15,7 +15,8 @@
     "radium": "^0.18.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-foundation": "^0.7.0"
+    "react-foundation": "^0.7.0",
+    "react-slick": "^0.14.11"
   },
   "devDependencies": {
     "case-sensitive-paths-webpack-plugin": "^2.0.0",

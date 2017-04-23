@@ -150,3 +150,6 @@ footer a {
   background-color: #daa6a0;
   color: #f5f5f5;
 }
+.slick-slide img {
+  display: inline-block!important;
+}

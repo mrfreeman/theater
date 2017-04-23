@@ -1,0 +1,13 @@
+24.04:
+1. fix slider ul-li styles, about section width
+2. increase img size to 200x200, try to add 2-3 more slides
+3. add nice carousel
+4. install lodash
+5. upload project to production server
+
+25.04:
+1. MoscowShow API
+
+26.04:
+1. Admin panel authorization
+2. Ticket sorting with lodash
